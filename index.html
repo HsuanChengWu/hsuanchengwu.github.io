@@ -10,6 +10,27 @@
 
 </head>
 
+
+<!-- Style for my photo and links -->
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container img {
+    width: 200px;
+    border-radius: 10%;
+  }
+
+  .container .text {
+  margin-left: 20px;
+}
+</style>
+
+<!-- ----- -->
+
 <body>
 
   <!--
@@ -36,10 +57,18 @@
         </header>
 
         <!-- moved "vertical-align:middle" style from span to img -->
-        <div>
+        <!-- <div>
           <img style="vertical-align:middle; border-radius: 10%;" src="./image/portrait.jpg" 
                     alt="YOU CAN'T SEE ME" width="200">
           <span style="">Mail: hzw5420@psu.edu</span>
+        </div> -->
+        <div class="container">
+          <img src="./image/portrait.jpg" alt="YOU CAN'T SEE ME">
+          <div class="text">
+            <p><a href="https://hsuanchengwu.github.io/contact">Contact</a></p>
+            <p><a href="https://hsuanchengwu.github.io/research">Publications/Preprint</a></p>
+            <p><a href="https://hsuanchengwu.github.io/course">Teaching Courses</a></p>
+          </div>
         </div>
 
 
