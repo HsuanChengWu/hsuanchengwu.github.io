@@ -57,7 +57,7 @@ footer {
 }
 
 footer .container {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -82,18 +82,4 @@ footer ul li a {
 
 footer ul li a:hover {
     color: #ddd;
-}
-@media only screen and (max-width: 480px) {
-    footer {
-        text-align: center;
-    }
-
-    footer .container {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    footer pre {
-        text-align: center;
-    }
 }
