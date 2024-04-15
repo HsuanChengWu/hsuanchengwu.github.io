@@ -1,4 +1,4 @@
-This is the codes for my personal webpage. 
+This is the codes for my personal webpage. Welcome to use it with pasting the below MIT license.
 
 Copyright (c) 2024 Hsuan-Cheng Wu
 
