@@ -1,0 +1,85 @@
+/* Font */
+body {
+    
+    font-family: "Oxygen Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+      
+      
+}
+
+/* center text */
+.center-text {
+    text-align: center;
+}
+
+
+
+/* header */
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container img {
+    width: 200px;
+    border-radius: 10%;
+  }
+
+  .container .text {
+  margin-left: 20px;
+}
+
+.center-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.center-div img {
+    width: 200px;
+    border-radius: 10%;
+}
+
+
+
+/* footer */
+footer {
+    background-color: rgba(34, 107, 124, 0.09);
+    color: rgb(11, 10, 10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #ddd;
+}

@@ -7,27 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hsuan-Cheng Wu</title>
 
-
-</head>
-
-
-<!-- Style for my photo and links -->
-
-<style>
-  .container {
-    display: flex;
-    align-items: center;
-  }
   
-  .container img {
-    width: 200px;
-    border-radius: 10%;
-  }
-
-  .container .text {
-  margin-left: 20px;
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">       
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen+Mono&family=Pacifico&display=swap" rel="stylesheet">
+</head>
 
 <!-- ----- -->
 
@@ -50,33 +36,23 @@
         - #ABOUT
       -->
 
-      <article class="active" data-page="about">
+      <article>
 
         <header>
           <h2 class="">Hsuan-Cheng Wu</h2>
         </header>
 
-        <!-- moved "vertical-align:middle" style from span to img -->
-        <!-- <div>
-          <img style="vertical-align:middle; border-radius: 10%;" src="./image/portrait.jpg" 
-                    alt="YOU CAN'T SEE ME" width="200">
-          <span style="">Mail: hzw5420@psu.edu</span>
-        </div> -->
-        <div class="container">
+        <div class="center-div">
           <img src="./image/portrait.jpg" alt="YOU CAN'T SEE ME">
-          <div class="text">
-            <p><a href="https://hsuanchengwu.github.io/research">Publications/Preprint</a></p>
-            <p><a href="https://hsuanchengwu.github.io/course">Teaching Courses</a></p>
-          </div>
         </div>
 
 
-        <section class="about-text">
-          <p>
+        <div class="center">
+          <p class="center-text">
             I am a PhD student at Pennsylvania State University, Department of Mathematics. 
           </p>
           
-          <p>
+          <p class="center-text">
             My research interests include but not limited to
             <b>numerical analysis</b>,
             <b>optimization</b>,
@@ -84,11 +60,11 @@
             <b>quantum computation</b>
             
           </p> 
-
-          <p>
-            Contact: hzw5420@psu.edu
-          </p>
-          </section>        
+          <p class="center-text"><a href="https://hsuanchengwu.github.io/research">Publications/Preprint</a></p>
+          <p class="center-text"><a href="https://hsuanchengwu.github.io/course">Teaching Courses</a></p>
+          <p class="center-text"><a href="#Footer">Contact</a></p>
+          
+        </div>        
 
         <section class="timeline">
 
@@ -137,6 +113,16 @@
       </article>
 
   </main>
+
+  <!-- footer -->
+  <footer id="Footer">
+    <div class="container">
+        <pre>
+          Contact information: hzw5420@psu.edu
+          © 2024 Hsuan Cheng Wu. All rights reserved.
+        </pre>
+    </div>
+</footer>
 
   
 </body>
