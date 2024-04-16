@@ -71,4 +71,7 @@ footer .footer-center-text {
         text-align: center;
         padding: 10px 0;
     }
+    .footer-center-text {
+        line-height: 1.5; 
+    }
 }
