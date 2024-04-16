@@ -62,3 +62,13 @@ footer .footer-center-text {
     text-align: center;
     line-height: 0.5;
 }
+
+/* Styles for phone screens */
+@media only screen and (max-width: 600px) {
+    .footer {
+        background-color: rgba(34, 107, 124, 0.09);
+        color: rgb(11, 10, 10);
+        text-align: center;
+        padding: 10px 0;
+    }
+}
