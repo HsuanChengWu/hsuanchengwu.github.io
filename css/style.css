@@ -71,6 +71,11 @@ main {
     margin-bottom: -50px; 
 }
 
+
+li {
+    margin-bottom: 20px; 
+}
+
 /* footer */
 footer {
     background-color: rgba(34, 107, 124, 0.09);
