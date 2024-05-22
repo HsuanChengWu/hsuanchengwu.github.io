@@ -71,6 +71,26 @@ main {
     margin-bottom: -50px; 
 }
 
+/* a tag  */
+
+a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: purple;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
 
 li.margin {
     margin-bottom: 20px; 
