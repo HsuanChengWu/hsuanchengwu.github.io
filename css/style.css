@@ -79,7 +79,7 @@ a {
 
 /* unvisited link */
 a:link {
-    color: red;
+    color: blue;
   }
   
   /* visited link */
@@ -87,11 +87,6 @@ a:link {
     color: purple;
   }
   
-  /* selected link */
-  a:active {
-    color: blue;
-  }
-
 li.margin {
     margin-bottom: 20px; 
 }
