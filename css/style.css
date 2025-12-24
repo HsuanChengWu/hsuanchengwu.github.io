@@ -1,130 +1,173 @@
-html {
-    height: 100%;
+/* --- GENERAL RESET --- */
+html { 
+    height: 100%; 
 }
 
 body {
     display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  font-family: "Oxygen Mono", monospace; /* Font */
-  font-weight: 400;
-  font-style: normal;
-  padding: 0 20px; /* This adds 20px space on the left and right */
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Oxygen Mono", monospace;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: #333;
 }
 
 main {
     flex: 1;
-}
-  
-
-/* wrapper and footer CSS */
-.wrapper {
-    min-height: 100%;
-    /* Adjust the negative margin to match the footer's height */
-    margin-bottom: -50px; 
-    /* Add padding-bottom to ensure content doesn't overlap with the footer */
-    padding-bottom: 50px;
-    box-sizing: border-box; /* This ensures padding is included in the height */
-}
-
-
-/* center text */
-.center-text {
-    text-align: center;
-}
-
-
-
-/* header */
-
-  .container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .container img {
-    width: 200px;
-    border-radius: 10%;
-  }
-
-  .container .text {
-  margin-left: 20px;
-}
-
-.center-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.center-div img {
-    width: 200px;
-    border-radius: 10%;
-}
-
-
-.wrapper {
-    min-height: 100%;
-    /* Equal to footer's height */
-    margin-bottom: -50px; 
-}
-
-/* a tag  */
-
-a {
-    text-decoration: none;
-}
-
-/* unvisited link */
-a:link {
-    color: blue;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: purple;
-  }
-  
-li.margin {
-    margin-bottom: 20px; 
-}
-
-/* footer */
-footer {
-    background-color: rgba(34, 107, 124, 0.09);
-    color: rgb(11, 10, 10);
-    text-align: center;
-    bottom: 0;
     width: 100%;
-    padding: 7px 0;
+    max-width: 1100px; /* Prevents the whole page from getting too wide */
+    margin: 40px auto; /* Centers the main content */
 }
 
-footer .footer-container {
-    max-width: 1200px;
-    margin: auto;
+/* --- THE GRID LAYOUT --- */
+.profile-grid {
+    display: grid;
     
+    /* CHANGE THIS LINE */
+    /* Old: grid-template-columns: 1fr 1.5fr; */
+    
+    /* New: This makes the Left column wider (1.3) than the Right (1) */
+    grid-template-columns: 1.3fr 1fr; 
+    
+    /* Gaps between the boxes */
+    column-gap: 50px;
+    row-gap: 40px;
+    align-items: start;
 }
 
-footer .footer-center-text {
+/* --- UPPER LEFT: PROFILE PIC --- */
+.pic-area {
+    /* This ensures the image stays in the left column */
+    grid-column: 1; 
+    grid-row: 1;
+    text-align: center; /* Centers image in its own box */
+}
+
+.pic-area img {
+    /* HARD LIMITS to prevent explosion */
+    width: 100%;
+    max-width: 250px; /* The image will NEVER be wider than 250px */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: block; /* Removes weird spacing under images */
+    margin: 0 auto; /* Centers the image */
+}
+
+/* --- UPPER RIGHT: BIO --- */
+.bio-area {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.bio-area h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+/* --- LOWER LEFT: EDUCATION --- */
+.edu-area {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/* --- LOWER RIGHT: LINKS --- */
+.links-area {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* --- STYLING --- */
+h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* --- Education List Styling --- */
+
+.edu-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* 1. Only target the MAIN list items (The Schools) for big spacing */
+.edu-list > li {
+    margin-bottom: 25px;
+}
+
+.edu-list h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+
+/* 2. The Degree Text (e.g., B.Sc. in Mathematics...) */
+.edu-list span {
+    display: block;
+    color: #666;
+    font-size: 0.95rem;
+    /* This sets the gap between the Degree and the first bullet point */
+    margin-bottom: 5px; 
+}
+
+/* 3. The Nested List (The container for bullets) */
+.edu-list ul {
+    /* Remove default top margin so the spacing is controlled purely by the span above */
+    margin-top: 0; 
+    margin-bottom: 0;
+    padding-left: 20px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* 4. The Bullet Points themselves */
+.edu-list ul li {
+    /* This sets the gap between the bullet points to match the gap above */
+    margin-bottom: 5px; 
+}
+
+/* Links Styling */
+.links-area p {
+    margin: 15px 0;
+}
+
+a { 
+    text-decoration: none; 
+    color: #0056b3; 
+}
+a:hover { 
+    text-decoration: underline; 
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #f9f9f9;
     text-align: center;
-    line-height: 0.5;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #eee;
+    margin-top: auto;
 }
 
-
-
-/* Styles for phone screens */
-@media screen and (max-width: 480px) {
-    .footer {
-        background-color: #13070917;
-        color: rgb(11, 10, 10);
-    }
-    .footer-center-text {
-        line-height: 1.5; 
+/* --- MOBILE RESPONSIVENESS --- */
+/* If the screen is smaller than 768px (like a phone), make it 1 column */
+@media screen and (max-width: 768px) {
+    .profile-grid {
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
+
+    .pic-area, .bio-area, .edu-area, .links-area {
+        width: 100%; /* Full width on phone */
+        margin-bottom: 30px;
+    }
+    
+    .edu-list {
+        text-align: left; /* Keep lists readable */
+        display: inline-block;
+    }
 }
-
-
-  
