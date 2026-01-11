@@ -171,3 +171,61 @@ footer {
         display: inline-block;
     }
 }
+
+
+
+/* --- LAYOUT FOR TEXT PAGES (Publication/Teaching) --- */
+.text-page-container {
+    width: 100%;
+    max-width: 850px; /* Limits width so lines aren't too long to read */
+    margin: 0 auto;   /* Centers the block on the screen */
+}
+
+/* Optional: Add some spacing between papers/courses */
+.text-page-container h3 {
+    margin-top: 40px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.text-page-container li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+/* --- PUBLICATION LIST STYLING --- */
+
+.pub-list li {
+    margin-bottom: 30px; /* Space between different papers */
+}
+
+/* 1. Name */
+.pub-author {
+    color: darkcyan;
+    font-style: italic;
+    margin-bottom: 4px; /* Small gap between name and title */
+}
+
+/* 2. Paper Name */
+.pub-title {
+    font-weight: bold;
+    margin-bottom: 4px; /* Small gap between title and journal */
+    font-size: 1.05rem;
+}
+
+.pub-title a {
+    text-decoration: none;
+    color: #000; /* Keeps title black (or change to blue if you prefer) */
+}
+
+.pub-title a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* 3. Journal/Link */
+.pub-journal {
+    color: #666; /* Grey text for metadata */
+    font-size: 0.95rem;
+}
